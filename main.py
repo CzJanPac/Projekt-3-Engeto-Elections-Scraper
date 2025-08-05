@@ -22,3 +22,5 @@ def zapis_data_do_csv(soubor):
 
 def main():
     pass
+
+# tady budem pokracovat
