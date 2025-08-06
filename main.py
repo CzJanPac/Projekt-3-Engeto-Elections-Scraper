@@ -100,6 +100,12 @@ def main():
     url = sys.argv[1]
     csvfile = sys.argv[2]
 
+    # Kontrola, že první argument je URL a druhý CSV soubor
+    if not url.startswith("http") or not csvfile.endswith(".csv"):
+        print("Chyba: argumenty nejsou ve správném pořadí nebo formátu.")
+        print(f"Správné použití: python {sys.argv[0]} <URL> <vystupni_soubor.csv>")
+        sys.exit(1)
+
     soup = ziskej_parsovany_odkaz(url)
     vysledky, hlavicky_stran = zpracuj_vsechny_obce(soup)
     zapis_do_csv(vysledky, csvfile, hlavicky_stran)
