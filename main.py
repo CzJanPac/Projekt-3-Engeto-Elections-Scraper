@@ -107,7 +107,7 @@ def zpracuj_vsechny_obce(soup):
 
 def zapis_do_csv(data, soubor, hlavicky_stran):
     with open(soubor, 'w', newline='', encoding="utf-8") as csvfile:
-        print(f"Ukládán do souboru: {soubor}")
+        print(f"Ukládám do souboru: {soubor}")
         writer = csv.writer(csvfile)
         hlavicka = ["Kód obce", "Název obce", "Voličů v seznamu", "Vydané obálky", "Platné hlasy"] + hlavicky_stran
         writer.writerow(hlavicka)
