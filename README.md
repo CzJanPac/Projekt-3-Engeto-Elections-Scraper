@@ -2,12 +2,12 @@
 <p>3. projekt - Engeto Python Akademie</p>
 
 <h2>Popis projektu</h2>
-<p>Tento projekt slouží ke stažení výsledků parlamentních voleb z webu volby.cz pro vybraný okres.<br>
+<p>Tento projekt slouží ke stažení výsledků parlamentních voleb z webu volby.cz pro vybraný okres, který vyberete kliknutím na "X" ve <br>sloupci "Výběr obce" na stránce <a href="https://www.volby.cz/pls/ps2017nss/ps3?xjazyk=CZ" target="_blank" rel="noopener noreferrer">Výsledky hlasování za územní celky – výběr územní úrovně</a>.<br>
 Program stáhne seznam všech obcí v daném okrese, pro každou obec načte podrobné volební výsledky a uloží je do CSV souboru.</p>
 
 <h2>Instalace knihoven</h2>
 <p>Knihovny potřebné pro běh programu jsou uvedeny v souboru <code>requirements.txt</code>.<br>
-Před spuštěním programu je nainstalujte pomocí příkazu:</p>
+Před spuštěním programu (doporučuji použít virtuální prostředí) je nainstalujte pomocí příkazu:</p>
 <pre><code>pip install -r requirements.txt</code></pre>
 
 <h2>Spuštění programu</h2>
@@ -29,11 +29,10 @@ Před spuštěním programu je nainstalujte pomocí příkazu:</p>
 <pre>
 Stahuji data z vybraného URL: https://www.volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&amp;xkraj=14&amp;xnumnuts=8102
 Stahování může chvíli trvat...
-Ukládán do souboru: vysledky_frydek_mistek.csv
-Data byla uložena (XX obcí).
+Ukládám do souboru: vysledky_frydek_mistek.csv
+Data byla uložena (XX obcí). <i>- Počet zpracovaných obcí závisí na zadané URL.</i>
 Hotovo, ukončuji ELECTION SCRAPER.
 </pre>
-<p><em>Poznámka: Počet zpracovaných obcí závisí na zadané URL.</em></p>
 
 <h3>Částečný výstup (část CSV souboru)</h3>
 <pre>
